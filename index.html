@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Cảnh Điền - DJ Producer & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen" role="dialog" aria-modal="true" aria-labelledby="splash-title">
+        <div class="splash-background">
+            <div class="gradient-overlay"></div>
+            <div class="particle-container"></div>
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="light-beams">
+                <div class="beam beam-1"></div>
+                <div class="beam beam-2"></div>
+                <div class="beam beam-3"></div>
+            </div>
+        </div>
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="logo-animation">
+                    <div class="logo-icon music-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="logo-icon code-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="logo-icon star-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h1 id="splash-title" class="splash-title">Chào Mừng Bạn</h1>
+            <p class="splash-subtitle">Khám phá thế giới của Nguyễn Cảnh Điền</p>
+            <button class="splash-btn" type="button" aria-label="Bắt đầu khám phá">
+                <span class="btn-text">✨ Bắt đầu cuộc phiêu lưu ✨</span>
+                <span class="btn-icon">→</span>
+            </button>
+            <div class="splash-footer">
+                <div class="loading-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-text">Nguyễn Cảnh Điền</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active" aria-label="Trang chủ">Trang Chủ</a>
+                    <a href="#about" class="nav-link" aria-label="Giới thiệu">Giới Thiệu</a>
+                    <a href="#contact" class="nav-link" aria-label="Liên hệ">Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" type="button" title="Toggle theme" aria-label="Chuyển đổi theme">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591"/>
+        </svg>
+    </button>
+
+    <!-- Header Section -->
+    <header class="header_main" id="home">
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Avatar with Spinner Container -->
+            <div class="avatar-spinner-container">
+                <!-- Spinner Rings -->
+                <div class="spinner-ring spinner-ring-1"></div>
+                <div class="spinner-ring spinner-ring-2"></div>
+                <div class="spinner-ring spinner-ring-3"></div>
+                <div class="spinner-ring spinner-ring-4"></div>
+                
+                <!-- Planets -->
+                <div class="planet planet-1"></div>
+                <div class="planet planet-2"></div>
+                <div class="planet planet-3"></div>
+                <div class="planet planet-4"></div>
+                <div class="planet planet-5"></div>
+                <div class="planet planet-6"></div>
+                <div class="planet planet-7"></div>
+                <div class="planet planet-8"></div>
+                
+                <!-- Central Avatar -->
+                <div class="central-avatar">
+                    <img src="ENdiii.jpg.webp" alt="Nguyễn Cảnh Điền" class="avatar-img" id="profileAvatarImg">
+                </div>
+            </div>
+            
+            <h1 class="profile-name reveal" data-delay="0" id="profileName">Nguyễn Cảnh Điền</h1>
+            <p class="lead reveal" data-delay="100">
+                Du Học Sinh <strong>24/10/2002</strong> — <em>Nghệ An</em>
+            </p>
+            
+            <div class="roles reveal" data-delay="200">
+                <span class="pill" data-tooltip="Đang theo học tại Hàn Quốc">🇰🇷 Du Học Sinh Hàn Quốc</span>
+                <span class="pill" data-tooltip="Đam mê sáng tạo âm nhạc">🎵 DJ Producer</span>
+                <span class="pill" data-tooltip="Chuyên phát triển web">💻 Web Developer</span>
+                <span class="pill" data-tooltip="Tạo ra những bản hit">🌟 Content Creator</span>
+            </div>
+            
+            <div class="typing-container reveal" data-delay="300">
+                <span id="typing" class="typing"></span>
+                <span class="typing-cursor"></span>
+            </div>
+            
+            <p class="profile-bio reveal" data-delay="400">
+                Chào mừng bạn đến với thế giới của tôi! Tôi là Nguyễn Cảnh Điền - một DJ Producer và Web Developer đam mê, đang theo học tại Hàn Quốc. Tôi kết hợp giữa nghệ thuật âm nhạc và công nghệ để tạo ra những trải nghiệm độc đáo.
+            </p>
+            
+            <div class="profile-actions reveal" data-delay="500">
+                <a href="#contact" class="cta-button cta-primary" aria-label="Liên hệ">
+                    <span>🎧 Liên Hệ</span>
+                    <span>→</span>
+                </a>
+                <a href="#about" class="cta-button cta-secondary" aria-label="Tìm hiểu thêm">
+                    <span>📖 Tìm Hiểu Thêm</span>
+                    <span>↓</span>
+                </a>
+            </div>
+            
+            <div class="social-links reveal" data-delay="600">
+                <a href="https://github.com/Endiii02" class="social-link github" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/@ENDiii02" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/endiii.02" class="social-link instagram" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/Ensidy24102002" class="social-link facebook" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://tiktok.com/@...endiii_02" class="social-link tiktok" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Music Player Layer - Thu Nhỏ/Phóng To -->
+    <div class="music-player-rectangle" id="musicPlayerRectangle">
+        <!-- Circle Mode - Thu Nhỏ -->
+        <div class="music-player-circle" id="musicPlayerCircle">
+            <button class="circle-play-btn" id="circlePlayBtn" aria-label="Play/Pause">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+        
+        <!-- Rectangle Mode - Phóng To -->
+        <div class="player-container" id="playerContainer">
+            <!-- Track Info (không có thumbnail) -->
+            <div class="player-header">
+                <div class="track-info">
+                    <div class="track-title" id="trackTitle">My Music</div>
+                    <div class="track-artist" id="trackArtist">Nguyễn Cảnh Điền</div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <div 
+                    class="progress-bar"
+                    id="progressBar"
+                >
+                    <div 
+                        class="progress-fill"
+                        id="progressFill"
+                    ></div>
+                </div>
+                <div class="time-display-wrapper">
+                    <span class="current-time" id="currentTime">0:00</span>
+                    <span class="total-time" id="totalTime">0:00</span>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="player-controls">
+                <button 
+                    class="control-btn shuffle-btn"
+                    id="shuffleBtn"
+                    aria-label="Shuffle"
+                    title="Phát ngẫu nhiên"
+                >
+                    <i class="fas fa-random"></i>
+                </button>
+                
+                <button 
+                    class="control-btn prev-btn"
+                    id="prevBtn"
+                    aria-label="Previous track"
+                >
+                    <i class="fas fa-step-backward"></i>
+                </button>
+
+                <button 
+                    class="control-btn play-btn"
+                    id="playBtn"
+                    aria-label="Play/Pause"
+                >
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button 
+                    class="control-btn next-btn"
+                    id="nextBtn"
+                    aria-label="Next track"
+                >
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-control">
+                <button class="volume-btn" id="volumeBtn" aria-label="Volume">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Giới Thiệu</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Về Tôi</h3>
+                        <p>Xin chào! Tôi là Nguyễn Cảnh Điền, một du học sinh người Việt Nam đang theo học tại Hàn Quốc. Với niềm đam mê âm nhạc và công nghệ, tôi đã kết hợp hai lĩnh vực này để tạo ra những trải nghiệm độc đáo và sáng tạo.</p>
+                        
+                        <h3>Hành Trình</h3>
+                        <p>Sinh ngày 24/10/2002 tại Nghệ An, tôi luôn có ước mơ được khám phá thế giới và theo đuổi đam mê của mình. Hiện tại, tôi đang tập trung vào việc phát triển kỹ năng trong lĩnh vực sản xuất âm nhạc và phát triển web.</p>
+                        
+                        <h3>Sở Thích</h3>
+                        <p>Âm nhạc điện tử, lập trình web, thiết kế UI/UX, và chia sẻ kiến thức qua các nền tảng mạng xã hội.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img 
+                            src="endi.jpg" 
+                            alt="Music Production" 
+                            class="object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Liên Hệ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Hãy Kết Nối Với Tôi</h3>
+                        <p>
+                            Tôi luôn sẵn lòng hợp tác trong các dự án âm nhạc, phát triển web, hoặc bất kỳ cơ hội sáng tạo nào. Đừng ngần ngại liên hệ với tôi!
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>nguyencanhdien2002.org@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+82 10-1234-5678</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Seoul, South Korea</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Họ và Tên" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Chủ đề" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Tin nhắn của bạn" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button cta-primary" aria-label="Gửi tin nhắn">
+                            <span>📧 Gửi Tin Nhắn</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Giới Thiệu</h4>
+                    <p>Nguyễn Cảnh Điền - DJ Producer & Web Developer đam mê, kết hợp giữa nghệ thuật âm nhạc và công nghệ để tạo ra những trải nghiệm độc đáo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" aria-label="Trang chủ">Trang Chủ</a></li>
+                        <li><a href="#about" aria-label="Giới thiệu">Giới Thiệu</a></li>
+                        <li><a href="#contact" aria-label="Liên hệ">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mạng Xã Hội</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Endiii02" class="social-link github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://youtube.com/@ENDiii02" class="social-link youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com/endiii.02" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nguyễn Cảnh Điền. All rights reserved. Made with ❤️ in BuSan & Nghệ An</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
